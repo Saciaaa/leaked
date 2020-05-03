@@ -29,9 +29,9 @@ if len(sys.argv) < 2:
     '\n' + '\tMade by: {}Sacia'.format(BLUE, BLUE).center(76) +
 '\n' + '\tVersion: {}2.0{}\n'.format(BLUE, END).center(80) + '\n')
 
-info = input(BLUE+"Paste info here!:   ")
+info = input("Paste info here!:   '\n'")
 text = info
-file = open('info.txt', 'w')
+file = open('info.txt', 'a')
 file.write(text)
 file.close()
 print(BLUE+"leaking info to database!")
