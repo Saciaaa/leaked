@@ -30,9 +30,7 @@ if len(sys.argv) < 2:
 '\n' + '\tVersion: {}2.0{}\n'.format(BLUE, END).center(80) + '\n')
 
 
-info = input(BLUE+"\nPaste info here!:   ")+"\n"
-if info == "":
-    print("All info Erased!!")
+info = input(BLUE+"Paste info here!:   ")+"\n"
 with open('info.txt', 'a') as  file:
     file.write(info)
     file.close()
