@@ -35,6 +35,8 @@ with open('info.txt', 'a') as  file:
     file.write(info)
     file.close()
 print(BLUE+"leaking info to database!")
+if info == "":
+    print("All info Erased!!")
 
 system('git add .')
 system('git commit -m "info"')
