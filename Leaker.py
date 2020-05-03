@@ -30,7 +30,7 @@ if len(sys.argv) < 2:
 '\n' + '\tVersion: {}2.0{}\n'.format(BLUE, END).center(80) + '\n')
 
 space = '\n'
-info = input(BLUE+"Paste info here!:   "+space)
+info = input(BLUE+"\nPaste info here!:   ")
 file = open('info.txt', 'a')
 file.write(info)
 file.close()
