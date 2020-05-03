@@ -30,10 +30,10 @@ if len(sys.argv) < 2:
 '\n' + '\tVersion: {}2.0{}\n'.format(BLUE, END).center(80) + '\n')
 
 
-info = input(BLUE+"Paste info here!:   \n")
+info = input(BLUE+"\nPaste info here!:   ")
 with open('info.txt', 'a') as  file:
     file.write(info)
-file.close()
+    file.close()
 print(BLUE+"leaking info to database!")
 
 system('git add .')
